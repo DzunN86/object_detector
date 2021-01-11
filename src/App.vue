@@ -78,9 +78,9 @@ export default {
         ctx.strokeRect(x, y, width, height);
         ctx.fillStyle = "#2fff00";
         let predictionText = prediction.class;
-        // if (predictionText == "person") {
-        //   predictionText = "toilet";
-        // }
+        if (predictionText == "person") {
+          predictionText = "toilet";
+        }
         const textWidth = ctx.measureText(predictionText).width;
         const textHeight = parseInt(font, 10);
         ctx.fillRect(x, y, textWidth + 10, textHeight + 10);
