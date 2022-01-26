@@ -79,7 +79,7 @@ export default {
         ctx.fillStyle = "#2fff00";
         let predictionText = prediction.class;
         if (predictionText == "person") {
-          predictionText = "toilet";
+          predictionText = "person";
         }
         const textWidth = ctx.measureText(predictionText).width;
         const textHeight = parseInt(font, 10);
